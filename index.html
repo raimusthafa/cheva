@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheva Week 01 - HTML & CSS</title>
+
+<style>
+    body {
+        background: #f0eeee;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    section {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    nav {
+        margin-top: 10px;
+        background: white;
+        padding: 20px;
+        border-radius: 4px;
+        box-shadow: 0 0 6px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        border-top: 5px solid green;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 6px rgba(0,0,0,0.1);
+        margin-bottom: 40px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    form .form-group {
+        margin-bottom: 18px;
+    }
+
+    form label {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .btn-row {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 8px 22px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .btn-cancel {
+        background: #d9534f;
+    }
+
+    .btn-submit {
+        background: #0275d8;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+    }
+
+    thead {
+        background: #54504c;
+        color: white;
+    }
+
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+        font-size: 14px;
+    }
+
+</style>
+</head>
+
+<body>
+<main>
+    <nav>
+        Cheva Week 01 - HTML & CSS
+    </nav>
+
+    <section class="card">
+        <h2>Form Pendataan</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="Masukkan Nama Anda">
+            </div>
+
+            <div class="form-group">
+                <label for="nim">NIM</label>
+                <input type="number" id="nim" placeholder="Masukkan NIM Anda">
+            </div>
+
+            <div class="form-group">
+                <label for="angkatan">Angkatan</label>
+                <input type="number" id="angkatan" placeholder="Masukkan Angkatan Anda">
+            </div>
+
+            <div class="btn-row">
+                <button type="button" class="btn btn-cancel">Cancel</button>
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Table Data</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                    <th>Angkatan</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Budi</td>
+                    <td>1302990000</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Cahyo</td>
+                    <td>1302212000</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Dudi</td>
+                    <td>1303010140</td>
+                    <td>2020</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>
